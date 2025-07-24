@@ -74,7 +74,7 @@
           object-fit: cover;
         }
 
-        .job-section {
+        /* .job-section {
           display: flex;
           justify-content: center;
           gap: 20px;
@@ -86,12 +86,12 @@
           border-radius: 5px;
           box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
           text-align: center;
-        }
+        } */
       </style>
     </head>
     <body>
       <div class = "container">
-              <h1 class = "text-center mt-2 mb-4 text-primary">Job Adda</h1>
+              <h1 class = "text-center mt-2 mb-4 text-primary">{{company_name}}</h1>
                 <img id="banner" class="img-fluid" src="static/banner.jpg">
 
                 <h2 class = "text-center mt-2 mb-4">About Job Adda</h2>
@@ -99,7 +99,7 @@
                 </p>
 
               <h2 class = "text-center mt-2 mb-4">Job Opening</h2>
-              <div class ="job-section">
+              <!-- <div class ="job-section">
                 <div class= "job-box">
                   <h3>Data analyst</h3>
                   <p>Bangalore, India</p>
@@ -140,7 +140,8 @@
                   </div>
                 </div>
 
-              </div>
+              </div> -->
+              {{jobs}}
               <div class = "text-center mt-4 mb-4">
                   <button class = "btn btn-primary btn-lg">Contact Us</button>
                 <p class = "mt-4 text-secondary">Copyright &copy; 2023 Job Adda. All rights reserved.  </p>
