@@ -2,10 +2,126 @@
 <html>
     <head>
         <title>Home</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+        }
+        .container{
+          width: 80%;
+          margin: 0 auto;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+        }
+        h1 {
+          text-align: center;
+          color: #333;
+        }
+        #banner {
+          /* display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          height: auto; */
+          width:100%;
+          height: 320px;
+          object-fit: cover;
+        }
+        h2 {
+          text-align: center;
+          color: #333;
+        }
+        p {
+          text-align: center;
+          color: #666;
+          margin: 20px;
+        }
+        button {
+          display: block;
+          margin: 20px auto;
+          padding: 10px 20px;
+          background-color: #007BFF;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        .job-section {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          margin: 20px;
+        }
+        .job-box{
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
+      
+      </style>
     </head>
     <body>
-        <h1>Job Adda</h1>
-        <img src="static/banner.jpg" height="100px">
+      <div class = "container">
+              <h1>Job Adda</h1>
+                <img id="banner" src="static/banner.jpg" height="320px">
 
+                <h2>About Job Adda</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium rutrum nunc, quis sollicitudin dui. Sed elementum ex id felis aliquam, varius auctor mi molestie. Maecenas vitae leo eget purus semper volutpat sit amet eu nunc. Quisque vel velit et quam cursus ultricies sed eget sapien. Morbi risus magna, sollicitudin ut sapien id, interdum facilisis augue. Quisque eleifend vel felis sed lacinia. Donec laoreet, justo in accumsan condimentum, orci leo egestas dui, non tristique mi nunc quis libero. Aliquam in sapien lobortis odio egestas consequat. Integer sed lorem sed nulla efficitur placerat ut vel massa.
+                </p>
+
+              <h2>Job Opening</h2>
+              <div class ="job-section">
+                <div class= "job-box">
+                  <h3>Data analyst</h3>
+                  <p>Bangalore, India</p>
+                  <div class="apply-bnt">
+                      <button>Apply Now</button>
+                  </div>
+                </div>
+
+                <div class= "job-box">
+                  <h3>Backend Developer</h3>
+                  <p>Mumbai, India</p>
+                  <div class="apply-bnt">
+                      <button>Apply Now</button>
+                  </div>
+                </div>
+
+                <div class= "job-box">
+                  <h3>Frontend Developer</h3>
+                  <p>Telangana, India</p>
+                  <div class="apply-bnt">
+                      <button>Apply Now</button>
+                  </div>
+                </div>
+
+                <div class= "job-box">
+                  <h3>Software Test Engineer</h3>
+                  <p>Telangana, India</p>
+                  <div class="apply-bnt">
+                      <button>Apply Now</button>
+                  </div>
+                </div>
+
+                <div class= "job-box">
+                  <h3>Project Manager</h3>
+                  <p>Telangana, India</p>
+                  <div class="apply-bnt">
+                      <button>Apply Now</button>
+                  </div>
+                </div>
+
+              </div>
+              <button>Contact Us</button>
+
+
+        
+      </div>
+       
     </body>
 </html>
