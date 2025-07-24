@@ -2,7 +2,8 @@
 <html>
     <head>
         <title>Home</title>
-      <style>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <!-- <style>
         body {
           font-family: Arial, sans-serif;
           margin: 0;
@@ -62,25 +63,48 @@
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           text-align: center;
         }
+        
       
+      </style> -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+      <style>
+        #banner{
+          width : 100%;
+          height: 320px;
+          object-fit: cover;
+        }
+
+        .job-section {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          margin: 20px;
+        }
+        .job-box{
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          text-align: center;
+        }
       </style>
     </head>
     <body>
       <div class = "container">
-              <h1>Job Adda</h1>
-                <img id="banner" src="static/banner.jpg" height="320px">
+              <h1 class = "text-center mt-2 mb-4 text-primary">Job Adda</h1>
+                <img id="banner" class="img-fluid" src="static/banner.jpg">
 
-                <h2>About Job Adda</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium rutrum nunc, quis sollicitudin dui. Sed elementum ex id felis aliquam, varius auctor mi molestie. Maecenas vitae leo eget purus semper volutpat sit amet eu nunc. Quisque vel velit et quam cursus ultricies sed eget sapien. Morbi risus magna, sollicitudin ut sapien id, interdum facilisis augue. Quisque eleifend vel felis sed lacinia. Donec laoreet, justo in accumsan condimentum, orci leo egestas dui, non tristique mi nunc quis libero. Aliquam in sapien lobortis odio egestas consequat. Integer sed lorem sed nulla efficitur placerat ut vel massa.
+                <h2 class = "text-center mt-2 mb-4">About Job Adda</h2>
+                <p class = "lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium rutrum nunc, quis sollicitudin dui. Sed elementum ex id felis aliquam, varius auctor mi molestie. Maecenas vitae leo eget purus semper volutpat sit amet eu nunc. Quisque vel velit et quam cursus ultricies sed eget sapien. Morbi risus magna, sollicitudin ut sapien id, interdum facilisis augue. Quisque eleifend vel felis sed lacinia. Donec laoreet, justo in accumsan condimentum, orci leo egestas dui, non tristique mi nunc quis libero. Aliquam in sapien lobortis odio egestas consequat. Integer sed lorem sed nulla efficitur placerat ut vel massa.
                 </p>
 
-              <h2>Job Opening</h2>
+              <h2 class = "text-center mt-2 mb-4">Job Opening</h2>
               <div class ="job-section">
                 <div class= "job-box">
                   <h3>Data analyst</h3>
                   <p>Bangalore, India</p>
                   <div class="apply-bnt">
-                      <button>Apply Now</button>
+                      <button class = "btn btn-primary">Apply Now</button>
                   </div>
                 </div>
 
@@ -88,7 +112,7 @@
                   <h3>Backend Developer</h3>
                   <p>Mumbai, India</p>
                   <div class="apply-bnt">
-                      <button>Apply Now</button>
+                      <button class = "btn btn-primary">Apply Now</button>
                   </div>
                 </div>
 
@@ -96,7 +120,7 @@
                   <h3>Frontend Developer</h3>
                   <p>Telangana, India</p>
                   <div class="apply-bnt">
-                      <button>Apply Now</button>
+                      <button class = "btn btn-primary">Apply Now</button>
                   </div>
                 </div>
 
@@ -104,7 +128,7 @@
                   <h3>Software Test Engineer</h3>
                   <p>Telangana, India</p>
                   <div class="apply-bnt">
-                      <button>Apply Now</button>
+                      <button class = "btn btn-primary">Apply Now</button>
                   </div>
                 </div>
 
@@ -112,15 +136,15 @@
                   <h3>Project Manager</h3>
                   <p>Telangana, India</p>
                   <div class="apply-bnt">
-                      <button>Apply Now</button>
+                      <button class = "btn btn-primary">Apply Now</button>
                   </div>
                 </div>
 
               </div>
-              <button>Contact Us</button>
-
-
-        
+              <div class = "text-center mt-4 mb-4">
+                  <button class = "btn btn-primary btn-lg">Contact Us</button>
+                <p class = "mt-4 text-secondary">Copyright &copy; 2023 Job Adda. All rights reserved.  </p>
+              </div>
       </div>
        
     </body>
