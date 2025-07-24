@@ -94,7 +94,7 @@
               <h1 class = "text-center mt-2 mb-4 text-primary">{{company_name}}</h1>
                 <img id="banner" class="img-fluid" src="static/banner.jpg">
 
-                <h2 class = "text-center mt-2 mb-4">About Job Adda</h2>
+                <h2 class = "text-center mt-2 mb-4">About {{company_name}}</h2>
                 <p class = "lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium rutrum nunc, quis sollicitudin dui. Sed elementum ex id felis aliquam, varius auctor mi molestie. Maecenas vitae leo eget purus semper volutpat sit amet eu nunc. Quisque vel velit et quam cursus ultricies sed eget sapien. Morbi risus magna, sollicitudin ut sapien id, interdum facilisis augue. Quisque eleifend vel felis sed lacinia. Donec laoreet, justo in accumsan condimentum, orci leo egestas dui, non tristique mi nunc quis libero. Aliquam in sapien lobortis odio egestas consequat. Integer sed lorem sed nulla efficitur placerat ut vel massa.
                 </p>
 
@@ -141,10 +141,20 @@
                 </div>
 
               </div> -->
-              {{jobs}}
+              <div>
+                {% for job in jobs %}
+                    {% include 'jobitem.html' %}
+                {% endfor %}
+              </div>
+
+              
               <div class = "text-center mt-4 mb-4">
-                  <button class = "btn btn-primary btn-lg">Contact Us</button>
-                <p class = "mt-4 text-secondary">Copyright &copy; 2023 Job Adda. All rights reserved.  </p>
+                    <button class = "btn btn-primary btn-lg">
+                      Contact Us
+                    </button>
+                  <p class = "mt-4 text-secondary">
+                    
+                    Copyright &copy; 2023 Job Adda. All rights reserved.                      </p>
               </div>
       </div>
        
