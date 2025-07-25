@@ -27,14 +27,20 @@ JOBS = [{
 
 @app.route("/")
 def hello():
-  return render_template('home.html', jobs=JOBS, company_name='Job Adda')
+    return render_template('home.html', jobs=JOBS, company_name='Job Adda')
 
 
 #creating an API route
 @app.route("/api/jobs")
 def list_jobs():
-  return jsonify(JOBS)
+    return jsonify(JOBS)
+
+
+#creating route for job page
+@app.route("/apply/<title>")
+def apply(title):
+    return render_template('apply.html', title=title)
 
 
 if __name__ == "__main__":
-  app.run(debug=True, host="0.0.0.0")
+    app.run(debug=True, host="0.0.0.0")
