@@ -39,7 +39,7 @@ def list_jobs():
 #creating route for job page
 @app.route("/apply/<title>")
 def apply(title):
-    return render_template('apply.html', title=title)
+    return render_template('apply.html', title=title, company_name='Job Adda')
 
 
 if __name__ == "__main__":
